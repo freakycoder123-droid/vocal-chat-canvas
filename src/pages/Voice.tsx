@@ -23,7 +23,7 @@ const Voice = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-6 gap-8">
       {/* Header */}
-      <div className="glass shimmer rounded-2xl p-6 max-w-md w-full">
+      <div className="glass rounded-2xl p-6 max-w-md w-full">
         <div className="flex items-center gap-3">
           <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center glow-pulse">
             <Sparkles className="w-6 h-6" />
@@ -50,7 +50,7 @@ const Voice = () => {
         {/* Main mic button */}
         <div
           className={cn(
-            "relative glass shimmer rounded-full p-8 transition-all duration-300",
+            "relative glass rounded-full p-8 transition-all duration-300",
             isListening && "shadow-[0_0_60px_rgba(0,150,255,0.8)]"
           )}
         >
@@ -74,7 +74,7 @@ const Voice = () => {
       </div>
 
       {/* Transcript Display */}
-      <div className="glass shimmer rounded-2xl p-6 max-w-md w-full min-h-[120px] flex items-center justify-center">
+      <div className="glass rounded-2xl p-6 max-w-md w-full min-h-[120px] flex items-center justify-center">
         {transcript ? (
           <p className="text-center text-muted-foreground">{transcript}</p>
         ) : (

@@ -61,7 +61,7 @@ const Chat = () => {
   return (
     <div className="flex flex-col h-screen p-6 gap-6">
       {/* Header */}
-      <div className="glass shimmer rounded-2xl p-6">
+      <div className="glass rounded-2xl p-6">
         <div className="flex items-center gap-3">
           <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center glow-pulse">
             <Sparkles className="w-6 h-6" />
@@ -76,7 +76,7 @@ const Chat = () => {
       </div>
 
       {/* Messages */}
-      <div className="flex-1 glass shimmer rounded-2xl overflow-hidden">
+      <div className="flex-1 glass rounded-2xl overflow-hidden">
         <ScrollArea className="h-full p-6" ref={scrollRef}>
           <div className="space-y-4">
             {messages.map((message) => (
@@ -121,7 +121,7 @@ const Chat = () => {
       </div>
 
       {/* Input */}
-      <div className="glass shimmer rounded-2xl p-4">
+      <div className="glass rounded-2xl p-4">
         <div className="flex gap-3">
           <Input
             value={input}

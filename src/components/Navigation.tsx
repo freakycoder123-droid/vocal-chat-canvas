@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 const Navigation = () => {
   return (
     <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-50">
-      <div className="glass shimmer rounded-full p-2 flex gap-2">
+      <div className="glass rounded-full p-2 flex gap-2">
         <RouterNavLink
           to="/"
           className={({ isActive }) =>
